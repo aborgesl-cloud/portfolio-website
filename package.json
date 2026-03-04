@@ -1,14 +1,1 @@
-{"name": "portfolio-website",
- "version": "1.0.0",
- "description": "A portfolio website",
- "main": "index.js",
- "scripts": {
-   "test": "echo 'Error: no test specified' && exit 1"
- },
- "keywords": [],
- "author": "aborgesl-cloud",
- "license": "ISC",
- "dependencies": {
-   "express": "^4.17.1"
- }
-}
+{"name": "portfolio-website", "version": "1.0.0", "scripts": {"start": "node server/index.js", "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"", "build": "npm run build --prefix frontend"}, "workspaces": ["frontend", "backend"]}
